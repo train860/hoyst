@@ -19,7 +19,7 @@ export default function WorkflowSection() {
       description: "Securely link your workspace with a simple one-time setup that takes less than a minute.",
       content: (
         // Notion Integration Setup
-        <div className="bg-white rounded-2xl shadow-lg p-6">
+        <div className="bg-white rounded-2xl shadow-sm p-6">
           <div className="flex items-center justify-between mb-4">
             <h4 className="font-semibold text-gray-900">Notion Integration Setup</h4>
             <div className="text-xs text-gray-500">hoyst.io</div>
@@ -76,7 +76,7 @@ export default function WorkflowSection() {
       description: "Stay in your flow state. Draft, edit, and perfect articles in the Notion editor you already love.",
       content: (
         // Notion Editor
-        <div className="bg-white rounded-2xl shadow-lg p-6">
+        <div className="bg-white rounded-2xl shadow-sm p-6">
           <div className="flex items-center justify-between mb-4">
             <h4 className="font-semibold text-gray-900">Notion Page Editor</h4>
             <div className="text-xs text-gray-500">notion.so</div>
@@ -141,7 +141,7 @@ export default function WorkflowSection() {
       description: "One click transforms your draft into a live blog post. The URL automatically appears back in your Notion table.",
       content: (
         // Database with Publishing
-        <div className="bg-white rounded-2xl shadow-lg p-6">
+        <div className="bg-white rounded-2xl shadow-sm p-6">
           <div className="flex items-center justify-between mb-4">
             <h4 className="font-semibold text-gray-900">Posts Database</h4>
             <div className="text-xs text-gray-500">notion.so</div>
@@ -207,13 +207,13 @@ export default function WorkflowSection() {
   ]
 
   return (
-    <section id="workflow" className="py-24 bg-gray-50" aria-labelledby="workflow-heading">
+    <section id="workflow" className="py-8 md:py-24" aria-labelledby="workflow-heading">
       <div className="container mx-auto">
         {/* Main Card */}
-        <div className="bg-white overflow-hidden rounded-lg border border-gray-200">
+        <div className="bg-white overflow-hidden rounded-lg md:border border-gray-200">
           <div className="lg:grid lg:grid-cols-2 lg:gap-0">
             {/* Left Content */}
-            <div className="px-8 py-12 lg:px-12 lg:py-16">
+            <div className="md:px-8 md:py-12 lg:px-12 lg:py-16">
               <div className="space-y-8">
                 <header>
                   <div className="flex items-center space-x-3 mb-6">
@@ -269,10 +269,10 @@ export default function WorkflowSection() {
             </div>
 
             {/* Right Visual - Dynamic Content */}
-            <div className="bg-gray-100 px-8 py-12 lg:px-12 lg:py-16">
+            <div className="bg-gray-100 rounded-lg md:rounded-none mt-4 md:mt-0 px-2 py-2 md:px-8 md:py-12 lg:px-12 lg:py-16">
               <div className="space-y-8">
                 {/* Dynamic Content Based on Active Step */}
-                <div key={activeStep} className="animate-in fade-in duration-200">
+                <div key={activeStep} className="animate-in fade-in duration-200 overflow-hidden">
                   {steps.find(step => step.id === activeStep)?.content}
                 </div>
               </div>

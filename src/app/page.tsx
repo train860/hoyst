@@ -15,11 +15,11 @@ export default function Home() {
             {/* Top Notification Bar */}
             <div className="flex justify-center mb-12">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-700 border border-gray-600/80">
-                <span className="inline-flex items-center justify-center px-2 py-1 mr-3 text-xs font-medium text-white rounded-full" style={{backgroundColor: '#9739de'}}>
+                <span className="inline-flex items-center justify-center px-2 py-1 mr-3 text-xs font-medium text-white rounded-full" style={{ backgroundColor: '#9739de' }}>
                   NEW
                 </span>
                 <span className="text-sm text-gray-300">
-                  Join our first 100 founding members. 
+                  Join our first 100 founding members.
                   <a href="#waitlist" className="text-white hover:text-gray-300 font-medium ml-1">
                     Get 50% off forever →
                   </a>
@@ -69,10 +69,10 @@ export default function Home() {
             {/* Product Demo */}
             <div className="mt-20">
               <div className="relative">
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
+                <video
+                  autoPlay
+                  loop
+                  muted
                   className="w-full max-w-7xl mx-auto rounded-xl shadow-2xl border border-gray-700"
                   poster="/hero-poster.jpg"
                   aria-label="Demo video showing Hoyst workflow from Notion to published blog"
@@ -88,9 +88,9 @@ export default function Home() {
         </section>
 
         {/* Problem Section */}
-        <section className="py-24 bg-white" aria-labelledby="problem-heading">
+        <section className="py-8 md:py-24 bg-white" aria-labelledby="problem-heading">
           <div className="container mx-auto">
-            <header className="text-center mb-20">
+            <header className="text-center mb-10 md:mb-20">
               <h2 id="problem-heading" className="text-4xl font-bold text-gray-900 mb-6">
                 Stop Fighting Your Tools. Start Creating.
               </h2>
@@ -114,7 +114,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-600">Jumping between Notion for writing, WordPress for publishing, and your code editor for tweaks.</p>
                   </div>
-                  
+
                   {/* Solution */}
                   <div>
                     <div className="flex items-center space-x-3 mb-4">
@@ -144,7 +144,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-600">Managing reader comments on your blog, and post ideas back in Notion.</p>
                   </div>
-                  
+
                   {/* Solution */}
                   <div>
                     <div className="flex items-center space-x-3 mb-4">
@@ -174,7 +174,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-600">Using platforms that make your blog look like everyone else's and load at a crawl.</p>
                   </div>
-                  
+
                   {/* Solution */}
                   <div>
                     <div className="flex items-center space-x-3 mb-4">
@@ -197,7 +197,7 @@ export default function Home() {
         <WorkflowSection />
 
         {/* Design Section */}
-        <section id="theme-editor" className="py-24 bg-gray-50" aria-labelledby="design-heading">
+        <section id="theme-editor" className="py-8 md:py-24" aria-labelledby="design-heading">
           <div className="container mx-auto border border-gray-200 rounded-lg py-12 bg-gray-100">
             {/* Header Content */}
             <div className="text-center mb-16">
@@ -212,10 +212,10 @@ export default function Home() {
             {/* Video Demo */}
             <div className="max-w-5xl mx-auto">
               <div className="relative">
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
+                <video
+                  autoPlay
+                  loop
+                  muted
                   className="w-full rounded-xl shadow-xs"
                   poster="/editor-poster.jpg"
                   aria-label="Demo video showing Hoyst visual editor interface for blog customization"
@@ -229,9 +229,9 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="py-24" aria-labelledby="features-heading">
+        <section id="features" className="py-8 md:py-24" aria-labelledby="features-heading">
           <div className="container mx-auto">
-            <header className="text-center mb-20">
+            <header className="text-center mb-10 md:mb-20">
               <h2 id="features-heading" className="text-4xl font-bold text-gray-900 mb-6">
                 Powerful by Default. Designed for Writers.
               </h2>
@@ -240,215 +240,83 @@ export default function Home() {
             {/* Features Grid - Dynamic Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Writing Workflow Card - Large */}
-              <article className="lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
+              <article className="flex lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex flex-col flex-1">
+                  <div className="flex-shrink-0 flex items-center gap-2 text-gray-700">
+                    <svg fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.5c0 .28.22.5.5.5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0-.5.5Zm12.88 6.78.35 1.07a2.2 2.2 0 0 0 1.4 1.4l1.09.35a.42.42 0 0 1 0 .8l-1.07.35a2.2 2.2 0 0 0-1.4 1.4l-.35 1.07a.42.42 0 0 1-.8 0l-.35-1.07a2.22 2.22 0 0 0-1.4-1.4l-1.07-.35a.42.42 0 0 1 0-.8l1.07-.35a2.2 2.2 0 0 0 1.38-1.4l.35-1.07a.42.42 0 0 1 .8 0ZM8 4.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1c.28 0 .5.22.5.5Zm6-.5a3 3 0 1 1 0 6H6a2 2 0 1 0 0 4h5.1a1.4 1.4 0 0 0-.01 1H6a3 3 0 1 1 0-6h8a2 2 0 1 0 0-4H9.5a.5.5 0 0 1 0-1H14Z" fill="currentColor"></path></svg>
+                    <h3 className="text-lg font-[550]">Closed-loop Workflow</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">The Ultimate Writing Workflow</h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Your Notion database is your CMS. With URL write-back and comment sync, your entire blogging process—from first draft to reader feedback—lives in one place.
+                  <div className="flex-1 mt-4">
+
+                    <p className="text-gray-600">
+                      Published URLs and statuses automatically sync back to your Notion database. Your CMS is truly complete.
                     </p>
-                    <div className="flex items-center text-sm text-black font-medium">
-                      <span className="mr-2">✓</span>
-                      <span>URL write-back</span>
-                      <span className="mx-3">•</span>
-                      <span className="mr-2">✓</span>
-                      <span>Comment sync</span>
+                    <div className="flex flex-col text-black font-medium gap-1 mt-8">
+                      <div className="flex items-center">
+                        <span className="mr-2">✓</span>
+                        <span>URL write-back</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="mr-2">✓</span>
+                        <span>Comment sync</span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div className="flex-1 hidden md:flex"></div>
               </article>
 
               {/* Custom Domain Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Custom Domain</h4>
+                  <svg aria-label="ApprovalsAppRegular" fill="currentColor" role="img" width="1.75rem" height="1.75rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.85 1.15a.5.5 0 1 0-.7.7L10.29 3H9.5a7.5 7.5 0 1 0 7.5 7.5.5.5 0 0 0-1 0A6.5 6.5 0 1 1 9.5 4h.8L9.14 5.15a.5.5 0 1 0 .7.7l2-2a.5.5 0 0 0 0-.7l-2-2Zm3.5 5.99c.2.2.2.5.01.7l-3.85 4a.5.5 0 0 1-.72 0l-1.65-1.7a.5.5 0 0 1 .72-.7l1.29 1.34 3.49-3.63c.2-.2.5-.2.7-.01Z" fill="currentColor"></path></svg>
+                  <h4 className="text-lg font-[550]">Automated SEO Engine</h4>
                 </div>
-                <p className="text-sm text-gray-600">Brand your blog with your own custom domain or use any feather.blog subdomains.</p>
+                <p className="text-gray-600">We handle sitemaps, meta tags, structured data, and image ALT tags to maximize your rankings.</p>
               </article>
 
               {/* Search Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Search</h4>
+                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                  <svg aria-label="ImageGlobeRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.55 2.15A8.9 8.9 0 0 0 4.01 5h2.98a8.9 8.9 0 0 0-.54-2.85 2.93 2.93 0 0 0-.53-.91C5.73 1.04 5.59 1 5.5 1c-.1 0-.23.05-.42.24-.18.19-.36.5-.53.91Zm-.72-.83A9.92 9.92 0 0 0 3 5H1.03a4.5 4.5 0 0 1 2.8-3.68Zm3.34 0A9.92 9.92 0 0 1 7.99 5h1.98a4.5 4.5 0 0 0-2.8-3.68ZM9.97 6H8a9.92 9.92 0 0 1-.82 3.68A4.5 4.5 0 0 0 9.97 6ZM5.5 10c.1 0 .23-.05.42-.24.18-.19.36-.5.53-.91.3-.73.5-1.72.54-2.85H4.01a8.9 8.9 0 0 0 .54 2.85c.17.42.35.72.53.91.19.2.33.24.42.24Zm-1.67-.32A4.5 4.5 0 0 1 1.03 6H3a9.92 9.92 0 0 0 .82 3.68ZM14 4h-3.2c-.1-.35-.24-.68-.4-1H14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3.6c.32.16.65.3 1 .4V14c0 .37.1.72.28 1.02l4.67-4.59a1.5 1.5 0 0 1 2.1 0l4.67 4.59c.18-.3.28-.65.28-1.02V6a2 2 0 0 0-2-2Zm0 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0ZM6 16h8a2 2 0 0 0 1.01-.27l-4.66-4.58a.5.5 0 0 0-.7 0l-4.66 4.58A2 2 0 0 0 6 16Z" fill="currentColor"></path></svg>
+                  <h4 className="text-lg font-[550]">Optimized Image Delivery</h4>
                 </div>
-                <p className="text-sm text-gray-600">Quickly search and find any article you want with just a keyboard.</p>
+                <p className="text-gray-600">Your Notion images are synced to our global CDN, converted to WebP, and served blazing-fast.</p>
               </article>
 
-              {/* Performance Card - Large */}
-              <article className="lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Performance That Keeps Readers Reading</h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Your Notion images are automatically synced to our global CDN and served at light speed. We guarantee top-tier Core Web Vitals, so your readers never leave because of a slow page.
-                    </p>
-                    <div className="flex items-center text-sm text-black font-medium">
-                      <span className="mr-2">✓</span>
-                      <span>Global CDN</span>
-                      <span className="mx-3">•</span>
-                      <span className="mr-2">✓</span>
-                      <span>Core Web Vitals</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
 
               {/* Tags Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Tags</h4>
+                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                  <svg aria-label="ShieldGlobeRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.08a.5.5 0 0 0-.56 0 15.05 15.05 0 0 1-6.3 2.43A.5.5 0 0 0 3 5v4.5c0 3.9 2.3 6.73 6.82 8.47a.5.5 0 0 0 .36 0C14.69 16.23 17 13.39 17 9.5V5a.5.5 0 0 0-.43-.5 15.05 15.05 0 0 1-6.3-2.42ZM4 5.43a15.97 15.97 0 0 0 5.6-2.08l.4-.25.4.25A15.97 15.97 0 0 0 16 5.43V9.5c0 3.4-1.97 5.86-6 7.46-4.03-1.6-6-4.07-6-7.46V5.43Zm8.96 5.07h-.98c-.04.79-.2 1.5-.45 2.08a3 3 0 0 0 1.43-2.08Zm0-1a3 3 0 0 0-1.43-2.08c.24.57.4 1.3.45 2.08h.98Zm-1.98 0a5.13 5.13 0 0 0-.46-1.88 1.72 1.72 0 0 0-.39-.54.43.43 0 0 0-.12-.08.03.03 0 0 0-.02 0h-.01a.43.43 0 0 0-.11.08c-.11.09-.25.26-.39.54-.23.46-.4 1.11-.46 1.88h1.96Zm-1.96 1c.05.77.23 1.42.46 1.88.14.28.28.45.39.54a.42.42 0 0 0 .12.08.03.03 0 0 0 .02 0h.01c.02-.01.06-.03.11-.08.11-.09.25-.26.39-.54.23-.46.4-1.11.46-1.88H9.02Zm-1 0h-.98a3 3 0 0 0 1.43 2.08c-.24-.57-.4-1.3-.45-2.08Zm0-1c.04-.79.2-1.5.45-2.08A3 3 0 0 0 7.04 9.5h.98ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" fill="currentColor"></path></svg>
+                  <h4 className="font-[550] text-lg">Custom Domains with SSL</h4>
                 </div>
-                <p className="text-sm text-gray-600">Categorize your articles and make it easy for your readers to find similar content.</p>
+                <p className="text-gray-600">Easily connect your own domain. We provision and renew your SSL certificate automatically.</p>
               </article>
 
               {/* RSS Feed Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">RSS Feed</h4>
+                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                  <svg aria-label="ChatMultipleCheckmarkRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.35 6.65c.2.2.2.5 0 .7L8.1 10.6a.5.5 0 0 1-.7 0L5.65 8.85a.5.5 0 1 1 .7-.7l1.4 1.4 2.9-2.9c.2-.2.5-.2.7 0ZM2.04 8.5a6.5 6.5 0 1 1 3.72 5.88l-2.49.7a1 1 0 0 1-1.2-1.33l.8-2.08a6.47 6.47 0 0 1-.83-3.17ZM8.54 3a5.5 5.5 0 0 0-4.7 8.37l.13.2L3 14.12l2.86-.8.18.09A5.5 5.5 0 1 0 8.54 3ZM6.57 15.74a6.49 6.49 0 0 0 7.71 1.64l2.49.7a1 1 0 0 0 1.2-1.33l-.8-2.08a6.47 6.47 0 0 0-1.37-8.04c.15.56.23 1.15.24 1.76a5.47 5.47 0 0 1 .16 5.98l-.13.2.97 2.54-2.86-.8-.18.09a5.47 5.47 0 0 1-5.67-.4 7.5 7.5 0 0 1-1.76-.26Z" fill="currentColor"></path></svg>
+                  <h4 className="text-lg font-[550]">Native Comment Sync</h4>
                 </div>
-                <p className="text-sm text-gray-600">Readers can always get notified when you publish a new article.</p>
+                <p className="text-gray-600">Reader comments appear directly on your Notion page, keeping all conversations unified.</p>
               </article>
-
-              {/* SEO Engine Card - Large */}
-              <article className="lg:col-span-3 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">An SEO Engine, Built-in</h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Rank higher, effortlessly. We automatically handle technical SEO: generating sitemaps, optimizing meta and canonical tags, and adding structured data for rich snippets. You write, we'll handle the robots.
-                    </p>
-                    <div className="flex items-center text-sm text-black font-medium">
-                      <span className="mr-2">✓</span>
-                      <span>Auto sitemaps</span>
-                      <span className="mx-3">•</span>
-                      <span className="mr-2">✓</span>
-                      <span>Rich snippets</span>
-                      <span className="mx-3">•</span>
-                      <span className="mr-2">✓</span>
-                      <span>Meta optimization</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              {/* Lightning Fast Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Lightning Fast</h4>
+                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                  <svg aria-label="RssRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6ZM4 6c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm2.5 0a.5.5 0 0 0 0 1 6.5 6.5 0 0 1 6.5 6.5.5.5 0 0 0 1 0A7.5 7.5 0 0 0 6.5 6ZM6 9.5c0-.28.22-.5.5-.5a4.5 4.5 0 0 1 4.5 4.5.5.5 0 0 1-1 0A3.5 3.5 0 0 0 6.5 10a.5.5 0 0 1-.5-.5ZM7 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor"></path></svg>
+                  <h4 className="font-lg font-[550]">Built-in RSS Feed</h4>
                 </div>
-                <p className="text-sm text-gray-600">Every blog is optimized to the maximum for load speeds. Search engines will love your blog.</p>
+                <p className="text-gray-600">A classic RSS feed is automatically generated, allowing your most loyal readers to subscribe.</p>
               </article>
-
-              {/* Sitemap Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Sitemap</h4>
+                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                  <svg aria-label="JavascriptRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 9.5c0-.83.67-1.5 1.5-1.5h1.5a.5.5 0 0 1 0 1H13a.5.5 0 0 0-.5.5v1c0 .28.22.5.5.5h.5c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5H12a.5.5 0 0 1 0-1h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13a1.5 1.5 0 0 1-1.5-1.5v-1Zm-.5-1a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1c.83 0 1.5-.67 1.5-1.5v-5ZM3 6v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3Zm3-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Z" fill="currentColor"></path></svg>
+                  <h4 className="text-lg font-[550]">Scripts & Integrations</h4>
                 </div>
-                <p className="text-sm text-gray-600">Automatic sitemap to make it easy for search engines to index all the links your blog has.</p>
+                <p className="text-gray-600">Inject any third-party script for analytics, newsletters, or chats. Your blog, your tools.</p>
               </article>
 
-              {/* Related Posts Card - Medium */}
-              <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Related Posts</h4>
-                </div>
-                <p className="text-sm text-gray-600">Make it easy for your readers to explore and read other related articles at the end of every article.</p>
-              </article>
-
-              {/* Full Control Card - Large */}
-              <article className="lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Full Control for Power Bloggers</h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Connect your own domain, inject custom scripts for analytics or newsletter forms (like ConvertKit), and trust our developer-first architecture. Your blog, your rules.
-                    </p>
-                    <div className="flex items-center text-sm text-black font-medium">
-                      <span className="mr-2">✓</span>
-                      <span>Custom domain</span>
-                      <span className="mx-3">•</span>
-                      <span className="mr-2">✓</span>
-                      <span>Custom scripts</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              {/* Multiple Authors Card - Medium */}
-              <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-                    </svg>
-                  </div>
-                  <h4 className="font-semibold text-gray-900">Multiple Authors</h4>
-                </div>
-                <p className="text-sm text-gray-600">Make it easy for your readers to explore articles of individual authors with a separate dedicated page for each author in your blog.</p>
-              </article>
             </div>
           </div>
         </section>
@@ -459,12 +327,12 @@ export default function Home() {
             <h2 id="cta-heading" className="text-4xl font-bold mb-6">
               Be First in Line. Become a Founding Member.
             </h2>
-            
+
             <div className="space-y-6 mb-12">
               <p className="text-xl text-gray-500">
                 We're looking for our first 100 bloggers to shape the future of Notion-based publishing. Join the waitlist today and lock in:
               </p>
-              
+
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex justify-center space-x-3">
                   <span className="text-black" aria-hidden="true">✓</span>
@@ -487,7 +355,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-gray-50">
+      <footer className="py-8">
         <div className="container mx-auto border-t border-gray-100 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-600">
