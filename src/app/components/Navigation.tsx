@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import NavigationButton from "./NavigationButton";
 import { useState, useEffect } from "react";
 import Logo from "./Logo";

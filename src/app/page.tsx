@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navigation from "./components/Navigation";
 import EmailForm from "./components/EmailForm";
 import WorkflowSection from "./components/WorkflowSection";

@@ -22,7 +22,7 @@ export default function WorkflowSection() {
         <div className="bg-white rounded-2xl shadow-sm p-6">
           <div className="flex items-center justify-between mb-4">
             <h4 className="font-semibold text-gray-900">Notion Integration Setup</h4>
-            <div className="text-xs text-gray-500">hoyst.io</div>
+            <div className="text-xs text-gray-500">hoyst.co</div>
           </div>
 
           <div className="space-y-6">
@@ -33,7 +33,7 @@ export default function WorkflowSection() {
                 <h5 className="text-sm font-medium text-gray-900 mb-2">Configure Webhook URL</h5>
                 <div className="bg-gray-50 rounded py-2 mb-2">
                   <div className="text-xs text-gray-500 mb-1">Webhook URL</div>
-                  <div className="text-xs font-mono text-gray-700">https://platform.hoyst.site/webhook/abc123</div>
+                  <div className="text-xs font-mono text-gray-700">https://platform.hoyst.co/webhook/abc123</div>
                 </div>
               </div>
             </div>

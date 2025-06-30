@@ -42,6 +42,7 @@ export default function EmailForm({ isHero = false }: EmailFormProps) {
         setMessage(result.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
+      console.error(error);
       setMessage('Something went wrong. Please try again.');
     } finally {
       setIsLoading(false);

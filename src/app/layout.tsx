@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     shortcut: '/favicon.svg',
     apple: '/favicon.svg',
   },
-  metadataBase: new URL('https://hoyst.com'),
+  metadataBase: new URL('https://hoyst.co'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Hoyst - Your Notion is Now Your Blog",
     description: "Turn your Notion database into a blazing-fast, SEO-powered blog",
-    url: 'https://hoyst.com',
+    url: 'https://hoyst.co',
     siteName: 'Hoyst',
     locale: 'en_US',
     type: "website",
@@ -75,7 +75,7 @@ export default function RootLayout({
     '@type': 'SoftwareApplication',
     name: 'Hoyst',
     description: 'The headless engine for writers and developers who live in Notion. Turn your database into a blazing-fast, SEO-powered blog.',
-    url: 'https://hoyst.com',
+    url: 'https://hoyst.co',
     applicationCategory: 'WebApplication',
     operatingSystem: 'Web',
     offers: {
