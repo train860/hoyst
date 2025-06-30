@@ -9,7 +9,7 @@ export default function Home() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gray-900" aria-labelledby="hero-heading">
+        <section className="pt-24 pb-20 bg-gray-900" aria-labelledby="hero-heading">
           <div className="container mx-auto">
             {/* Top Notification Bar */}
             <div className="flex justify-center mb-12">
