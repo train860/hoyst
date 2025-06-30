@@ -230,9 +230,9 @@ export default function Home() {
             {/* Features Grid - Dynamic Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Writing Workflow Card - Large */}
-              <article className="flex lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300">
+              <article className="flex lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex flex-col flex-1">
-                  <div className="flex-shrink-0 flex items-center gap-2 text-gray-700">
+                  <div className="flex-shrink-0 flex items-center gap-2">
                     <svg fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.5c0 .28.22.5.5.5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0-.5.5Zm12.88 6.78.35 1.07a2.2 2.2 0 0 0 1.4 1.4l1.09.35a.42.42 0 0 1 0 .8l-1.07.35a2.2 2.2 0 0 0-1.4 1.4l-.35 1.07a.42.42 0 0 1-.8 0l-.35-1.07a2.22 2.22 0 0 0-1.4-1.4l-1.07-.35a.42.42 0 0 1 0-.8l1.07-.35a2.2 2.2 0 0 0 1.38-1.4l.35-1.07a.42.42 0 0 1 .8 0ZM8 4.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1c.28 0 .5.22.5.5Zm6-.5a3 3 0 1 1 0 6H6a2 2 0 1 0 0 4h5.1a1.4 1.4 0 0 0-.01 1H6a3 3 0 1 1 0-6h8a2 2 0 1 0 0-4H9.5a.5.5 0 0 1 0-1H14Z" fill="currentColor"></path></svg>
                     <h3 className="text-lg font-[550]">Closed-loop Workflow</h3>
                   </div>
@@ -267,7 +267,7 @@ export default function Home() {
 
               {/* Search Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                <div className="flex items-center space-x-3 mb-4">
                   <svg aria-label="ImageGlobeRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.55 2.15A8.9 8.9 0 0 0 4.01 5h2.98a8.9 8.9 0 0 0-.54-2.85 2.93 2.93 0 0 0-.53-.91C5.73 1.04 5.59 1 5.5 1c-.1 0-.23.05-.42.24-.18.19-.36.5-.53.91Zm-.72-.83A9.92 9.92 0 0 0 3 5H1.03a4.5 4.5 0 0 1 2.8-3.68Zm3.34 0A9.92 9.92 0 0 1 7.99 5h1.98a4.5 4.5 0 0 0-2.8-3.68ZM9.97 6H8a9.92 9.92 0 0 1-.82 3.68A4.5 4.5 0 0 0 9.97 6ZM5.5 10c.1 0 .23-.05.42-.24.18-.19.36-.5.53-.91.3-.73.5-1.72.54-2.85H4.01a8.9 8.9 0 0 0 .54 2.85c.17.42.35.72.53.91.19.2.33.24.42.24Zm-1.67-.32A4.5 4.5 0 0 1 1.03 6H3a9.92 9.92 0 0 0 .82 3.68ZM14 4h-3.2c-.1-.35-.24-.68-.4-1H14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3.6c.32.16.65.3 1 .4V14c0 .37.1.72.28 1.02l4.67-4.59a1.5 1.5 0 0 1 2.1 0l4.67 4.59c.18-.3.28-.65.28-1.02V6a2 2 0 0 0-2-2Zm0 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0ZM6 16h8a2 2 0 0 0 1.01-.27l-4.66-4.58a.5.5 0 0 0-.7 0l-4.66 4.58A2 2 0 0 0 6 16Z" fill="currentColor"></path></svg>
                   <h4 className="text-lg font-[550]">Optimized Image Delivery</h4>
                 </div>
@@ -277,7 +277,7 @@ export default function Home() {
 
               {/* Tags Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                <div className="flex items-center space-x-3 mb-4">
                   <svg aria-label="ShieldGlobeRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.08a.5.5 0 0 0-.56 0 15.05 15.05 0 0 1-6.3 2.43A.5.5 0 0 0 3 5v4.5c0 3.9 2.3 6.73 6.82 8.47a.5.5 0 0 0 .36 0C14.69 16.23 17 13.39 17 9.5V5a.5.5 0 0 0-.43-.5 15.05 15.05 0 0 1-6.3-2.42ZM4 5.43a15.97 15.97 0 0 0 5.6-2.08l.4-.25.4.25A15.97 15.97 0 0 0 16 5.43V9.5c0 3.4-1.97 5.86-6 7.46-4.03-1.6-6-4.07-6-7.46V5.43Zm8.96 5.07h-.98c-.04.79-.2 1.5-.45 2.08a3 3 0 0 0 1.43-2.08Zm0-1a3 3 0 0 0-1.43-2.08c.24.57.4 1.3.45 2.08h.98Zm-1.98 0a5.13 5.13 0 0 0-.46-1.88 1.72 1.72 0 0 0-.39-.54.43.43 0 0 0-.12-.08.03.03 0 0 0-.02 0h-.01a.43.43 0 0 0-.11.08c-.11.09-.25.26-.39.54-.23.46-.4 1.11-.46 1.88h1.96Zm-1.96 1c.05.77.23 1.42.46 1.88.14.28.28.45.39.54a.42.42 0 0 0 .12.08.03.03 0 0 0 .02 0h.01c.02-.01.06-.03.11-.08.11-.09.25-.26.39-.54.23-.46.4-1.11.46-1.88H9.02Zm-1 0h-.98a3 3 0 0 0 1.43 2.08c-.24-.57-.4-1.3-.45-2.08Zm0-1c.04-.79.2-1.5.45-2.08A3 3 0 0 0 7.04 9.5h.98ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" fill="currentColor"></path></svg>
                   <h4 className="font-[550] text-lg">Custom Domains with SSL</h4>
                 </div>
@@ -286,21 +286,21 @@ export default function Home() {
 
               {/* RSS Feed Card - Medium */}
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                <div className="flex items-center space-x-3 mb-4">
                   <svg aria-label="ChatMultipleCheckmarkRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.35 6.65c.2.2.2.5 0 .7L8.1 10.6a.5.5 0 0 1-.7 0L5.65 8.85a.5.5 0 1 1 .7-.7l1.4 1.4 2.9-2.9c.2-.2.5-.2.7 0ZM2.04 8.5a6.5 6.5 0 1 1 3.72 5.88l-2.49.7a1 1 0 0 1-1.2-1.33l.8-2.08a6.47 6.47 0 0 1-.83-3.17ZM8.54 3a5.5 5.5 0 0 0-4.7 8.37l.13.2L3 14.12l2.86-.8.18.09A5.5 5.5 0 1 0 8.54 3ZM6.57 15.74a6.49 6.49 0 0 0 7.71 1.64l2.49.7a1 1 0 0 0 1.2-1.33l-.8-2.08a6.47 6.47 0 0 0-1.37-8.04c.15.56.23 1.15.24 1.76a5.47 5.47 0 0 1 .16 5.98l-.13.2.97 2.54-2.86-.8-.18.09a5.47 5.47 0 0 1-5.67-.4 7.5 7.5 0 0 1-1.76-.26Z" fill="currentColor"></path></svg>
                   <h4 className="text-lg font-[550]">Native Comment Sync</h4>
                 </div>
                 <p className="text-gray-600">Reader comments appear directly on your Notion page, keeping all conversations unified.</p>
               </article>
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                <div className="flex items-center space-x-3 mb-4">
                   <svg aria-label="RssRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6ZM4 6c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm2.5 0a.5.5 0 0 0 0 1 6.5 6.5 0 0 1 6.5 6.5.5.5 0 0 0 1 0A7.5 7.5 0 0 0 6.5 6ZM6 9.5c0-.28.22-.5.5-.5a4.5 4.5 0 0 1 4.5 4.5.5.5 0 0 1-1 0A3.5 3.5 0 0 0 6.5 10a.5.5 0 0 1-.5-.5ZM7 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor"></path></svg>
                   <h4 className="font-lg font-[550]">Built-in RSS Feed</h4>
                 </div>
                 <p className="text-gray-600">A classic RSS feed is automatically generated, allowing your most loyal readers to subscribe.</p>
               </article>
               <article className="md:col-span-1 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-4 text-gray-700">
+                <div className="flex items-center space-x-3 mb-4">
                   <svg aria-label="JavascriptRegular" fill="currentColor" role="img" width="2rem" height="2rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 9.5c0-.83.67-1.5 1.5-1.5h1.5a.5.5 0 0 1 0 1H13a.5.5 0 0 0-.5.5v1c0 .28.22.5.5.5h.5c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5H12a.5.5 0 0 1 0-1h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13a1.5 1.5 0 0 1-1.5-1.5v-1Zm-.5-1a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1c.83 0 1.5-.67 1.5-1.5v-5ZM3 6v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3Zm3-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Z" fill="currentColor"></path></svg>
                   <h4 className="text-lg font-[550]">Scripts & Integrations</h4>
                 </div>
