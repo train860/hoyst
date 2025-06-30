@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation";
 import EmailForm from "./components/EmailForm";
 import WorkflowSection from "./components/WorkflowSection";
+import VideoPlayer from "./components/VideoPlayer";
 
 export default function Home() {
   return (
@@ -68,17 +69,13 @@ export default function Home() {
             {/* Product Demo */}
             <div className="mt-20">
               <div className="relative">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full max-w-7xl mx-auto rounded-xl shadow-2xl border border-gray-700"
+                <VideoPlayer
+                  src="/hero.mp4"
                   poster="/hero-poster.jpg"
-                  aria-label="Demo video showing Hoyst workflow from Notion to published blog"
-                >
-                  <source src="/hero.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                  className="w-full max-w-7xl mx-auto rounded-xl shadow-2xl border border-gray-700"
+                  ariaLabel="Demo video showing Hoyst workflow from Notion to published blog"
+                  playButtonText="Watch Demo Video"
+                />
                 {/* Overlay gradient for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent rounded-xl pointer-events-none"></div>
               </div>
@@ -210,19 +207,13 @@ export default function Home() {
 
             {/* Video Demo */}
             <div className="max-w-5xl mx-auto">
-              <div className="relative">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full rounded-xl shadow-xs"
-                  poster="/editor-poster.jpg"
-                  aria-label="Demo video showing Hoyst visual editor interface for blog customization"
-                >
-                  <source src="/editor.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+              <VideoPlayer
+                src="/editor.mp4"
+                poster="/editor-poster.jpg"
+                className="w-full rounded-xl shadow-xs"
+                ariaLabel="Demo video showing Hoyst visual editor interface for blog customization"
+                playButtonText="Watch Editor Demo"
+              />
             </div>
           </div>
         </section>
