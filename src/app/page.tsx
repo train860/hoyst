@@ -352,6 +352,8 @@ export default function Home() {
               © Hoyst 2025
             </div>
             <nav className="flex space-x-6 text-sm text-gray-600" aria-label="Footer navigation">
+              <a href="/privacy" className="hover:text-gray-900">Privacy Policy</a>
+              <a href="/terms" className="hover:text-gray-900">Terms of Service</a>
               <a href="#" className="hover:text-gray-900">Follow us on Twitter</a>
             </nav>
           </div>
